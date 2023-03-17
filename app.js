@@ -1,9 +1,20 @@
-// get the call now button element and listen for a click event
-const callNowButton = document.querySelector('.call-now-button');
-callNowButton.addEventListener('click', () => {
-  const phoneNumber = '123-456-7890'; // replace with your phone number
-  window.location.href = `tel:${phoneNumber}`;
-});
+var callUsBtn = document.getElementById("callUsBtn");
+var modal = document.querySelector(".modal");
+var closeBtn = document.querySelector(".close");
+
+callUsBtn.onclick = function() {
+  modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // get the form element and listen for a submit event
 const form = document.querySelector('form');

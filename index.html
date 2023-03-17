@@ -3,21 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sussex Plumbing Immediately</title>
+    <title>Emergency Plumbing Sussex</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <!-- <nav>
         <a href="#">Home</a>
         <a href="#">About Us</a>
         <a href="#">Services</a>
         <a href="#">Contact Us</a>
-      </nav>
+      </nav> -->
       <div class="hero">
-        <h1>Sussex Plumbing Immediately</h1>
+        <h1>Emergency Plumbing Sussex</h1>
         <p>We are the fastest and most reliable plumbing service in Sussex.</p>
-        <button>Call Us Now</button>
+
+        <button id="callUsBtn">Call Us Now</button>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Call us now at: <br> <a href="tel:1234567890">123-456-7890</a></p>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -61,5 +68,6 @@
         <a href="#">Terms and Conditions</a>
       </nav>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
