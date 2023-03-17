@@ -16,40 +16,31 @@ window.onclick = function(event) {
   }
 }
 
-// get the form element and listen for a submit event
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // prevent the default form submission behavior
-  
-  // get the form inputs
-  const name = form.querySelector('input[name="name"]').value;
-  const email = form.querySelector('input[name="email"]').value;
-  const message = form.querySelector('textarea[name="message"]').value;
-  
-  // validate the inputs
-  if (name === '' || email === '' || message === '') {
-    alert('Please fill out all fields');
-    return;
-  }
-  
-  // send the form data to a server using fetch or another method
-  // for example:
-  fetch('/api/contact', {
-    method: 'POST',
-    body: JSON.stringify({ name, email, message }),
-    headers: { 'Content-Type': 'application/json' }
-  })
-  .then(response => response.json())
-  .then(data => {
-    if (data.success) {
-      alert('Thank you for contacting us!');
-      form.reset();
-    } else {
-      alert('An error occurred. Please try again later.');
-    }
-  })
-  .catch(error => {
-    console.error(error);
-    alert('An error occurred. Please try again later.');
+const form = document.getElementById("myForm");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // prevent default form submission
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    // perform desired actions with the form data, e.g. send it to a server using fetch API
+    fetch("/my-server-url", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Message sent successfully.");
+          form.reset(); // clear the form
+        } else {
+          alert("Failed to send message. Please try again.");
+        }
+      })
+      .catch((error) => {
+        alert("An error occurred. Please try again later.");
+        console.error(error);
+      });
   });
-});
+</script>
