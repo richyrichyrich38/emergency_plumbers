@@ -1,146 +1,116 @@
-/* reset styles */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-/* global styles */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+  font-family: sans-serif;
+  margin: 0;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.services,
+.about,
+.contact {
+  margin-top: 4rem;
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+  margin-bottom: 1rem;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #fff;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-h1 {
-  font-size: 2rem;
+label,
+input,
+textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1.1rem;
 }
 
-nav ul {
-display: flex;
-justify-content: flex-end;
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
-nav li {
-margin-left: 1rem;
-}
-
-nav a {
-font-weight: bold;
-}
-
-main {
-margin-top: 5rem;
-}
-
-.hero {
-background-color: #fff;
-padding: 2rem;
-text-align: center;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-margin-bottom: 2rem;
-}
-
-.hero h2 {
-font-size: 2rem;
-margin-bottom: 1rem;
-}
-
-.services {
-background-color: #f9f9f9;
-padding: 2rem;
-margin-bottom: 2rem;
-}
-
-.services h2 {
-font-size: 1.5rem;
-margin-bottom: 1rem;
-}
-
-.services ul {
-margin-left: 1rem;
-}
-
-.services li {
-margin-bottom: 0.5rem;
-}
-
-.about {
-padding: 2rem;
-margin-bottom: 2rem;
-}
-
-.about h2 {
-font-size: 1.5rem;
-margin-bottom: 1rem;
-}
-
-.contact {
-background-color: #f9f9f9;
-padding: 2rem;
-margin-bottom: 2rem;
-}
-
-.contact h2 {
-font-size: 1.5rem;
-margin-bottom: 1rem;
-}
-
-form label {
-display: block;
-margin-bottom: 0.5rem;
-}
-
-form input,
-form textarea {
-width: 100%;
-padding: 0.5rem;
-border: 1px solid #ccc;
-border-radius: 3px;
-margin-bottom: 1rem;
-}
-
-form textarea {
-height: 10rem;
-}
-
-form button {
-background-color: #333;
-color: #fff;
-padding: 0.5rem 1rem;
-border: none;
-border-radius: 3px;
-cursor: pointer;
-}
-
-form button:hover {
-background-color: #444;
-}
-
-footer {
-background-color: #333;
-color: #fff;
-padding: 1rem;
-text-align: center;
+button[type="submit"]:hover {
+  background-color: #555;
 }
