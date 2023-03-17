@@ -64,15 +64,18 @@ header button:hover {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  padding: 200px;
+  padding: 100px 50px;
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
-  max-height: 600px;
   text-align: center;
-  color: red
 }
 
+.modal-content p {
+  color: red;
+  font-size: 65px;
+  font-weight: bold;
+}
 .close {
   color: #aaa;
   float: right;
