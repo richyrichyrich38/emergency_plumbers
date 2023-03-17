@@ -1,50 +1,54 @@
+/* Reset */
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
   margin: 0;
+  padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
 }
 
-.centered {
-  text-align: center;
-}
-
-/* Header styles */
+/* Header */
 header {
   background-color: #333;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
 }
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav li {
-  margin-left: 1rem;
-}
-
-nav a {
+header h1 {
+  font-size: 2rem;
   font-weight: bold;
 }
 
-/* Main styles */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+header a:hover {
+  background-color: #555;
+}
+
+/* Main */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero {
@@ -59,7 +63,7 @@ main {
   object-fit: cover;
 }
 
-.hero h2 {
+.hero .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,19 +83,59 @@ main {
 .about h2,
 .contact h2 {
   margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
-ul {
+.services ul,
+.about ul,
+.contact ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.services li,
+.about li,
+.contact li {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services li img,
+.about li img,
+.contact li img {
+  margin-bottom: 1rem;
+  height: 50px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Form */
 form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 label,
@@ -100,6 +144,13 @@ textarea {
   margin-bottom: 1rem;
   width: 100%;
   font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 150px;
 }
 
 button[type="submit"] {
@@ -108,9 +159,66 @@ button[type="submit"] {
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
+ 
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  footer p {
+  font-size: 1rem;
+  }
+  
+  footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  }
+  
+  footer a:hover {
   background-color: #555;
-}
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+  header {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  header h1 {
+  margin-bottom: 1rem;
+  }
+  
+  header nav {
+  margin-top: 1rem;
+  }
+  
+  main {
+  padding: 1rem;
+  }
+  
+  .hero {
+  height: 200px;
+  }
+  
+  .hero .hero-text {
+  font-size: 2rem;
+  }
+  
+  .services li,
+  .about li,
+  .contact li {
+  width: 100%;
+  margin: 0.5rem 0;
+  }
+  }
