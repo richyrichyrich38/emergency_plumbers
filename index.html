@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Plumbing Services</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Plumbers</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Emergency Plumbing Services</h1>
       <nav>
         <ul>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section class="hero">
-        <h2>24/7 Emergency Plumbing Services</h2>
-        <p>When you have a plumbing emergency, we're here to help. Call us now.</p>
-        <button class="call-now-button">Call Now</button>
-      </section>
-      <section class="services" id="services">
+      <div class="hero">
+        <img src="plumbing-banner.jpg" alt="Plumbing Banner" />
+        <h2 class="centered">24/7 Emergency Plumbing Service</h2>
+      </div>
+
+      <div class="services">
         <h2>Our Services</h2>
         <ul>
-          <li>24-hour emergency plumbing</li>
-          <li>Drain cleaning and clog removal</li>
-          <li>Water heater repair and installation</li>
+          <li>Emergency plumbing repairs</li>
           <li>Leak detection and repair</li>
-          <li>Toilet repair and installation</li>
-          <li>And more...</li>
+          <li>Blocked drain clearing</li>
+          <li>Hot water system repairs and installation</li>
+          <li>Toilet repairs and installation</li>
         </ul>
-      </section>
-      <section class="about" id="about">
+      </div>
+
+      <div class="about">
         <h2>About Us</h2>
-        <p>We're a team of experienced plumbers who are dedicated to providing high-quality service to our customers. With our 24/7 emergency plumbing services, you can count on us to be there when you need us most.</p>
-      </section>
-      <section class="contact" id="contact">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          cursus est eu nunc blandit, ac aliquet mi ultricies. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Aliquam tristique velit eget nulla fringilla lacinia.
+          In hac habitasse platea dictumst. Nulla vitae pharetra justo, at
+          malesuada est. Donec eget nibh eu eros rutrum ullamcorper. Fusce
+          mollis risus vel eros bibendum, at aliquet est auctor.
+        </p>
+      </div>
+
+      <div class="contact">
         <h2>Contact Us</h2>
         <form>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
-          <label for="message">Message</label>
-          <textarea name="message" id="message"></textarea>
-          <button type="submit">Send</button>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
         </form>
-      </section>
+      </div>
     </main>
     <footer>
       <p>&copy; 2023 Emergency Plumbing Services</p>
