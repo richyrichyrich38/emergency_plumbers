@@ -43,4 +43,3 @@ const form = document.getElementById("myForm");
         console.error(error);
       });
   });
-</script>
