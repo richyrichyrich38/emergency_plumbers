@@ -1,0 +1,151 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+text-decoration: none;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+#hero {
+background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero-text {
+text-align: center;
+color: #fff;
+}
+
+.hero-text h2 {
+font-size: 3em;
+margin-bottom: 20px;
+}
+
+.hero-text p {
+font-size: 1.5em;
+margin-bottom: 40px;
+}
+
+.cta-button {
+background-color: #fff;
+color: #003366;
+padding: 15px 30px;
+border-radius: 5px;
+text-decoration: none;
+}
+
+.cta-button:hover {
+background-color: #003366;
+color: #fff;
+}
+
+#services {
+background-color: #f2f2f2;
+padding: 50px;
+}
+
+#services h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+
+#services ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+#services li {
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+#about {
+padding: 50px;
+}
+
+#about h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+
+#contact {
+background-color: #003366;
+color: #fff;
+padding: 50px;
+}
+
+#contact h2 {
+text-align: center;
+margin-bottom: 40px;
+}
+
+form label {
+display: block;
+margin-bottom: 10px;
+font-size: 1.2em;
+}
+
+form input, form textarea {
+display: block;
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+}
+
+form button {
+background-color: #fff;
+color: #003366;
+padding: 15px 30px;
+border-radius: 5px;
+text-decoration: none;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+form button:hover {
+background-color: #003366;
+color: #fff;
+}
+
+footer {
+background-color: #f2f2f2;
+text-align: center;
+padding: 20px;
+font-size: 0.8em;
+}
