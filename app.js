@@ -1,3 +1,10 @@
+// get the call now button element and listen for a click event
+const callNowButton = document.querySelector('.call-now-button');
+callNowButton.addEventListener('click', () => {
+  const phoneNumber = '123-456-7890'; // replace with your phone number
+  window.location.href = `tel:${phoneNumber}`;
+});
+
 // get the form element and listen for a submit event
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {

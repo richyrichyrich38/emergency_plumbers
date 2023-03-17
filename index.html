@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Plumbing Services</title>
-    <meta name="description" content="We offer 24/7 emergency plumbing services in the [city/state] area. Call us now for fast, reliable service!">
-    <meta name="keywords" content="emergency plumbing, 24/7 plumbing, plumbing services">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
       <h1>Emergency Plumbing Services</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <section id="hero">
-      <div class="hero-text">
+    <main>
+      <section class="hero">
         <h2>24/7 Emergency Plumbing Services</h2>
-        <p>Call us now for fast, reliable service!</p>
-        <a href="#" class="cta-button">Call Now</a>
-      </div>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Emergency Plumbing</li>
-        <li>Drain Cleaning</li>
-        <li>Water Heater Repair and Replacement</li>
-        <li>Leak Detection and Repair</li>
-        <li>Gas Line Repair and Replacement</li>
-      </ul>
-    </section>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>We are a family-owned and operated business that has been serving the [city/state] area for over 20 years. Our team of experienced plumbers is available 24/7 to handle any emergency plumbing situation.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+        <p>When you have a plumbing emergency, we're here to help. Call us now.</p>
+        <button class="call-now-button">Call Now</button>
+      </section>
+      <section class="services" id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>24-hour emergency plumbing</li>
+          <li>Drain cleaning and clog removal</li>
+          <li>Water heater repair and installation</li>
+          <li>Leak detection and repair</li>
+          <li>Toilet repair and installation</li>
+          <li>And more...</li>
+        </ul>
+      </section>
+      <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We're a team of experienced plumbers who are dedicated to providing high-quality service to our customers. With our 24/7 emergency plumbing services, you can count on us to be there when you need us most.</p>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
     <footer>
-      <p>Copyright © 2023 Emergency Plumbing Services</p>
+      <p>&copy; 2023 Emergency Plumbing Services</p>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
